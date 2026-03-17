@@ -1,4 +1,8 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'Portfolio - Alexander Melander'
-theme = 'gallery'
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "Alexander Melander"
+
+theme = "kayal"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Kayal on Alexander Melander</title>
+    <link>http://localhost:1313/tags/kayal/</link>
+    <description>Recent content in Kayal on Alexander Melander</description>
+    <generator>Hugo -- 0.157.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Jul 2024 07:40:43 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/kayal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started :rocket:</title>
+      <link>http://localhost:1313/docs/getting-started/</link>
+      <pubDate>Sat, 20 Jul 2024 22:37:14 +0530</pubDate>
+      <guid>http://localhost:1313/docs/getting-started/</guid>
+      <description>This page contains installation instructions for both Hugo and Kayal, as well as instructions for future updates.</description>
+    </item>
+    <item>
+      <title>Configuration :nut_and_bolt:</title>
+      <link>http://localhost:1313/docs/configuration/</link>
+      <pubDate>Sun, 21 Jul 2024 21:28:49 +0530</pubDate>
+      <guid>http://localhost:1313/docs/configuration/</guid>
+      <description>This page contains configuration instructions for customizing Kayal according to your specific needs.</description>
+    </item>
+    <item>
+      <title>Advanced Customization :toolbox:</title>
+      <link>http://localhost:1313/docs/advanced-customization/</link>
+      <pubDate>Mon, 22 Jul 2024 07:40:43 +0530</pubDate>
+      <guid>http://localhost:1313/docs/advanced-customization/</guid>
+      <description>This page contains all advanced changes that Kayal supports.</description>
+    </item>
+  </channel>
+</rss>
