@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Alexander Melander</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://localhost:1313/AlexanderMelander/tags/</link>
     <description>Recent content in Tags on Alexander Melander</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/AlexanderMelander/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C&#43;&#43;</title>
-      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
+      <link>http://localhost:1313/AlexanderMelander/tags/c&#43;&#43;/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
+      <guid>http://localhost:1313/AlexanderMelander/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>
       <title>Progression</title>
-      <link>http://localhost:1313/tags/progression/</link>
+      <link>http://localhost:1313/AlexanderMelander/tags/progression/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/progression/</guid>
+      <guid>http://localhost:1313/AlexanderMelander/tags/progression/</guid>
       <description></description>
     </item>
     <item>
       <title>Wave System</title>
-      <link>http://localhost:1313/tags/wave-system/</link>
+      <link>http://localhost:1313/AlexanderMelander/tags/wave-system/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/wave-system/</guid>
+      <guid>http://localhost:1313/AlexanderMelander/tags/wave-system/</guid>
       <description></description>
     </item>
     <item>
       <title>Weapons and Animations</title>
-      <link>http://localhost:1313/tags/weapons-and-animations/</link>
+      <link>http://localhost:1313/AlexanderMelander/tags/weapons-and-animations/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/weapons-and-animations/</guid>
+      <guid>http://localhost:1313/AlexanderMelander/tags/weapons-and-animations/</guid>
       <description></description>
     </item>
     <item>
       <title>Flipbook VFX</title>
-      <link>http://localhost:1313/tags/flipbook-vfx/</link>
+      <link>http://localhost:1313/AlexanderMelander/tags/flipbook-vfx/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/flipbook-vfx/</guid>
+      <guid>http://localhost:1313/AlexanderMelander/tags/flipbook-vfx/</guid>
       <description></description>
     </item>
     <item>
       <title>Scripted Events</title>
-      <link>http://localhost:1313/tags/scripted-events/</link>
+      <link>http://localhost:1313/AlexanderMelander/tags/scripted-events/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/scripted-events/</guid>
+      <guid>http://localhost:1313/AlexanderMelander/tags/scripted-events/</guid>
       <description></description>
     </item>
     <item>
       <title>Time Slow</title>
-      <link>http://localhost:1313/tags/time-slow/</link>
+      <link>http://localhost:1313/AlexanderMelander/tags/time-slow/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/time-slow/</guid>
+      <guid>http://localhost:1313/AlexanderMelander/tags/time-slow/</guid>
       <description></description>
     </item>
   </channel>

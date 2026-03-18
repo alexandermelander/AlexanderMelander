@@ -1,76 +1,58 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/AlexanderMelander/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/botops/</loc>
+    <loc>http://localhost:1313/AlexanderMelander/posts/botops/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/botops/</loc>
+    <loc>http://localhost:1313/AlexanderMelander/tags/c&#43;&#43;/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/c&#43;&#43;/</loc>
+    <loc>http://localhost:1313/AlexanderMelander/posts/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:1313/AlexanderMelander/tags/progression/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/progression/</loc>
+    <loc>http://localhost:1313/AlexanderMelander/tags/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/AlexanderMelander/tags/wave-system/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/wave-system/</loc>
+    <loc>http://localhost:1313/AlexanderMelander/tags/weapons-and-animations/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/weapons-and-animations/</loc>
-    <lastmod>2026-03-17T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/bladeofwill/</loc>
+    <loc>http://localhost:1313/AlexanderMelander/posts/bladeofwill/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/bladeofwill/</loc>
+    <loc>http://localhost:1313/AlexanderMelander/posts/bpm/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/bpm/</loc>
+    <loc>http://localhost:1313/AlexanderMelander/tags/flipbook-vfx/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/bpm/</loc>
+    <loc>http://localhost:1313/AlexanderMelander/tags/scripted-events/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/flipbook-vfx/</loc>
+    <loc>http://localhost:1313/AlexanderMelander/tags/time-slow/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/scripted-events/</loc>
-    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/time-slow/</loc>
-    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/projects/about/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>http://localhost:1313/AlexanderMelander/categories/</loc>
   </url>
 </urlset>

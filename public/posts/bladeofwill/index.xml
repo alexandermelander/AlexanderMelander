@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blade of Will on Alexander Melander</title>
-    <link>http://localhost:1313/posts/bladeofwill/</link>
+    <link>http://localhost:1313/AlexanderMelander/posts/bladeofwill/</link>
     <description>Recent content in Blade of Will on Alexander Melander</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/bladeofwill/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/AlexanderMelander/posts/bladeofwill/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

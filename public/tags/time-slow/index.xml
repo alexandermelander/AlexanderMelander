@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Time Slow on Alexander Melander</title>
-    <link>http://localhost:1313/tags/time-slow/</link>
+    <link>http://localhost:1313/AlexanderMelander/tags/time-slow/</link>
     <description>Recent content in Time Slow on Alexander Melander</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/time-slow/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/AlexanderMelander/tags/time-slow/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blade of Will</title>
-      <link>http://localhost:1313/posts/bladeofwill/</link>
+      <link>http://localhost:1313/AlexanderMelander/posts/bladeofwill/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/bladeofwill/</guid>
+      <guid>http://localhost:1313/AlexanderMelander/posts/bladeofwill/</guid>
       <description>Intense 2D Hack/Slash Sidescroller</description>
     </item>
   </channel>
