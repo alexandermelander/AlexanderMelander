@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Flipbook VFX on Alexander Melander</title>
+    <link>http://localhost:1313/tags/flipbook-vfx/</link>
+    <description>Recent content in Flipbook VFX on Alexander Melander</description>
+    <generator>Hugo -- 0.157.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/flipbook-vfx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blade of Will</title>
+      <link>http://localhost:1313/posts/bladeofwill/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/bladeofwill/</guid>
+      <description>Intense 2D Hack/Slash Sidescroller</description>
+    </item>
+  </channel>
+</rss>
