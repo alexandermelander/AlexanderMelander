@@ -3,56 +3,84 @@
   <url>
     <loc>http://localhost:1313/AlexanderMelander/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/posts/botops/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/tags/c&#43;&#43;/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/posts/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/tags/progression/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/tags/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/tags/wave-system/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/tags/weapons-and-animations/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/posts/bladeofwill/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/posts/bpm/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/tags/flipbook-vfx/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/tags/scripted-events/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/tags/time-slow/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/categories/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
