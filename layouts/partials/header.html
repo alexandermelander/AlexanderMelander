@@ -1,0 +1,111 @@
+<header>
+    {{ if .Site.Params.logo }}
+    <a class="title" href="{{ "" | relLangURL}}">
+      {{ $imgData := dict "Page" . "URL" .Site.Params.logo "Alt" "Site Logo" "Size" "64x64" }}
+      {{ partial "image-renderer.html" $imgData }}
+    </a>
+    {{ end }}
+    <div class="header-cntr">
+    <a class="title" href="{{ "" | relLangURL}}">
+    <span>{{ .Site.Title | emojify }}</span>
+    </a>
+  <div class="menu">
+  <nav id="main-menu" class="mm-normal">
+    <ul>
+    <li> <button id="mob-x-icon" class="menu-btn" arial-label="x-icon"> {{ partial "icon.html" "xmark" }} </button> </li>
+    {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL }}" aria-label="{{ .Name }}">
+      {{ if .Pre }}
+        <span>
+          {{ partial "icon.html" .Pre }}
+        </span>
+          {{ end }}{{ .Title | emojify }}</li></a>
+    {{ end }}
+    </ul>
+  </nav>
+  <div class="side-menu">
+
+    <!-- LEFT GROUP: CV + Social -->
+    <div style="display:flex; gap:0.5rem; align-items:center;">
+  
+      <a href="{{ "cv/" | relURL }}" class="menu-btn" aria-label="CV">
+        {{ partial "icon.html" "newspaper" }}
+      </a>
+  
+      <a href="https://www.linkedin.com/in/alexander-programmer/" 
+         class="menu-btn" 
+         target="_blank" 
+         aria-label="LinkedIn">
+        {{ partial "icon.html" "linkedin" }}
+      </a>
+  
+      <a href="mailto:alexander.melander01@gmail.com" 
+         class="menu-btn" 
+         aria-label="Email">
+        {{ partial "icon.html" "email" }}
+      </a>
+  
+    </div>
+  
+    <!-- SPACING -->
+    <div style="width:1rem;"></div>
+  
+    <!-- RIGHT GROUP: Search + Theme -->
+    <div style="display:flex; gap:0.5rem; align-items:center;">
+  
+      {{ partial "search.html" . }}
+  
+      {{ if .Site.Params.showThemeSwitcher | default false }}
+      <button id="theme-switcher" class="menu-btn" aria-label="Theme switcher">
+        <div id="moon">{{ partial "icon.html" "moon" }}</div>
+        <div id="sun">{{ partial "icon.html" "sun" }}</div>
+      </button>
+      {{ end }}
+  
+    </div>
+  
+  </div>
+    <button id="mob-hb-icon" class="menu-btn" aria-label="Hamburger icon">
+      {{ partial "icon.html" "bars" }}
+    </button>
+  </div>
+  <script>
+  (function() {
+    document.addEventListener('DOMContentLoaded', function() {
+    const openBtn = document.getElementById('mob-hb-icon');
+    const closeBtn = document.getElementById('mob-x-icon');
+    const mainMenu = document.getElementById('main-menu');
+    const body = document.body;
+
+    openBtn.addEventListener('click', function() {
+        mainMenu.classList.replace('mm-normal', 'mm-mobile-open');
+        closeBtn.style.display = 'block';
+        body.style.overflow = 'hidden';
+    });
+    closeBtn.addEventListener('click', function() {
+        mainMenu.classList.replace('mm-mobile-open', 'mm-normal');
+        closeBtn.style.display = 'none';
+        body.style.overflow = '';
+    });
+    })
+  })();
+  </script>
+  {{ if .Site.Params.highlightCurrentMenu }}
+  <script>
+  (function() {
+    var mainmenu = document.getElementById('main-menu');
+    if (!mainmenu) return;
+
+    var path = window.location.pathname;
+    var links = mainmenu.querySelectorAll('a');
+
+    links.forEach(function(link) {
+      if (link.getAttribute('href') === path) {
+        link.classList.add('active');
+      }
+    });
+  })();
+  </script>
+  {{ end }}
+</div>
+</header>

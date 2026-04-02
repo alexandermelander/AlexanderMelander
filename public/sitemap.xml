@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/AlexanderMelander/</loc>
-    <lastmod>2026-03-17T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://localhost:1313/AlexanderMelander/posts/botops/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -49,6 +43,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/AlexanderMelander/</loc>
+    <lastmod>2024-07-20T22:37:45+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/AlexanderMelander/posts/bladeofwill/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -80,6 +80,11 @@
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/categories/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/AlexanderMelander/cv/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

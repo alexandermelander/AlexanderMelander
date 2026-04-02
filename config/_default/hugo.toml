@@ -1,14 +1,14 @@
 # -- Site Configuration --
 
 # URL to the root of your website.
-# baseURL = "https://your_domain.com/"
+baseURL = 'https://alexandermelander.github.io/AlexanderMelander/'
 
 # Site's language code
 languageCode = 'en-us'
 
-# title = "Site Title"
+title = "Alexander Melander"
 
-# theme = "kayal" # UNCOMMENT THIS LINE
+theme = "kayal" # UNCOMMENT THIS LINE
 
 # Number of articles per page in the listing.
 [pagination]
@@ -28,18 +28,18 @@ buildDrafts = true
 # Build pages with future dates during site generation.
 buildFuture = true
 
-# The types of outputs to generate for the homepage.
-# RSS is required to create RSS feeds, and JSON is needed for the search to function.
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-# Sitemap setting
 [sitemap]
   changefreq = 'daily'
   filename = 'sitemap.xml'
   priority = 0.5
 
+# The types of outputs to generate for the homepage.
+# RSS is required to create RSS feeds, and JSON is needed for the search to function.
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 # Google Analytics Configuration
 # [services]
 #   [services.googleAnalytics]
 #     ID = 'G-MEASUREMENT_ID'
+

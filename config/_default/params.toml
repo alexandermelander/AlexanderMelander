@@ -50,7 +50,7 @@ showMore = true
 showMoreDest = "posts"
 [homepage.profile]
 # [Optional] Displayed at the top of your homepage.
-# headline = "👋 Welcome to my site"
+headline = "👋 Welcome to my site, suh dude"
 # [Optional] Path to the profile image relative to assets/ folder. Minimum size: 200x200px.
 # image = "imgs/profile.svg"
 # Image position.
@@ -59,11 +59,11 @@ where = "right"  # Options: right, left, top
 # Article settings
 [article]
 # Whether to display article dates.
-showDate = true
+showDate = false
 # Whether to display modified dates of articles.
-showModDate = true
+showModDate = false
 # Whether to display reading time of articles.
-showReadingTime = true
+showReadingTime = false
 # Whether to display tags mentioned in the front matter.
 showTags = true
 # Whether to display next/previous article links in the article footer.
@@ -111,17 +111,15 @@ cardView = true
 showRSS = false
 
 # Social links
-# [[social]]
-# name = "GitHub"
-# icon = "github"
-# url = "https://github.com/mnjm/kayal"
-#
-# [[social]]
-# name = "Email"
-# icon = "email"
-# url = "mailto:name@example.com"
-#
-# [[social]]
-# name = "Twitter / X"
-# icon = "x-twitter"
-# url = "https://x.com/sample"
+[[social]]
+name = "CV"
+icon = "newspaper"
+url = "cv/"
+[[social]]
+name = "LinkedIn"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/alexander-programmer/"
+[[social]]
+name = "Email"
+icon = "email"
+url = "mailto:alexander.melander01@gmail.com"

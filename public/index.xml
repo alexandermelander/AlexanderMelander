@@ -6,7 +6,35 @@
     <description>Recent content on Alexander Melander</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/AlexanderMelander/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BotOps</title>
+      <link>http://localhost:1313/AlexanderMelander/posts/botops/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/posts/botops/</guid>
+      <description>Group Project 6 at TGA, Waved-based shooter.</description>
+    </item>
+    <item>
+      <title>Blade of Will</title>
+      <link>http://localhost:1313/AlexanderMelander/posts/bladeofwill/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/posts/bladeofwill/</guid>
+      <description>Intense 2D Hack/Slash Sidescroller</description>
+    </item>
+    <item>
+      <title>Brie Parmesan Mysteries</title>
+      <link>http://localhost:1313/AlexanderMelander/posts/bpm/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/posts/bpm/</guid>
+      <description>Published Game on Steam</description>
+    </item>
+    <item>
+      <title>CV</title>
+      <link>http://localhost:1313/AlexanderMelander/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/cv/</guid>
+      <description>Download CV </description>
+    </item>
   </channel>
 </rss>
