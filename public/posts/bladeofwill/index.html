@@ -16,7 +16,7 @@
   
   <meta name="description" content="Intense 2D Hack/Slash Sidescroller" />
   
-  <meta name="keywords" content="C&#43;&#43;, Time Slow, Scripted Events, Flipbook VFX, " />
+  <meta name="keywords" content="C&#43;&#43;, Time Slow, Scripted Events, Flipbook VFX, In-House Engine, " />
   <link rel="canonical" href="http://localhost:1313/AlexanderMelander/posts/bladeofwill/" />
 
   
@@ -56,6 +56,7 @@
     <meta property="article:tag" content="Time Slow">
     <meta property="article:tag" content="Scripted Events">
     <meta property="article:tag" content="Flipbook VFX">
+    <meta property="article:tag" content="In-House Engine">
 
   
     <meta property="og:image" content="http://localhost:1313/AlexanderMelander/header.png" />
@@ -387,6 +388,8 @@
   
   <a class="tag" href="/AlexanderMelander/tags/flipbook-vfx/">Flipbook VFX</a>
   
+  <a class="tag" href="/AlexanderMelander/tags/in-house-engine/">In-House Engine</a>
+  
 </p>
 
 
@@ -405,7 +408,9 @@
         <nav id="TableOfContents">
   <ul>
     <li><a href="#overview">Overview</a></li>
-    <li><a href="#problem">Problem</a></li>
+    <li><a href="#start">Start</a></li>
+    <li><a href="#vfx">VFX</a></li>
+    <li><a href="#scripted-events">Scripted Events</a></li>
   </ul>
 </nav>
       </div>
@@ -427,7 +432,36 @@
  </a>
   
 </h2>
-<p>Intense 2D Hack/Slash Sidescroller</p>
+<p>Intense 2D Hack/Slash Sidescroller where my main responsibilites included VFX, and Scripted Events tied to the player progression.</p>
+<hr>
+
+<h2 id="start">
+  Start
+  
+  <a hidden class="anchor" href="#start">
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"/></svg>
+
+
+ </a>
+  
+</h2>
+<p>This was the first project in our education where we began working in their propertiety engine &ldquo;The Game Engine&rdquo;. This meant we would have to start implementing features almost completely from scratch, and we had a strong picture of what we wanted to do within the first weeks. We wanted every pipeline worked out and visible in-game. Of course, there was no &ldquo;game&rdquo; the first two weeks, but we quickly nailed down asset loading, animations, VFX, and even Audio in the first sprint. There was even a rudamentary moving enemy moving across the screen.</p>
+<hr>
+
+<h2 id="vfx">
+  VFX
+  
+  <a hidden class="anchor" href="#vfx">
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"/></svg>
+
+
+ </a>
+  
+</h2>
+<p>I was working closely with the Procedual Artists in the beginning of the project. This meant I was working on proving the VFX pipeline. Since the game was 2D, a simple sprite flipbook was perfect for our game. I called it a &ldquo;VFXSystem&rdquo;, but it was really just a Singleton that took in a type of Flipbook, size, spawnpoint, rotational offset, and wether or not it would follow an object or not. This worked perfectly for the scope of our game. We could have blood splatter from our enemies, dust when we ran or landed, or sword swipes and dash-lines following the player.</p>
+<p>Of course, it was very rigid. It was the first time I had worked in C++ on such a large scale, and the functions became overly long and eventually complex as we wanted more functionality. With the knowledge I have now, I would&rsquo;ve instead made more overloads, or given the chance to create a struct that holds data so you can access the things you want to change, instead of specifying everything explicity in the function.</p>
 <p>
 
 
@@ -454,7 +488,7 @@
 
     
       
-        src="/AlexanderMelander/posts/bladeofwill/header.png"
+        src="/AlexanderMelander/posts/bladeofwill/effect.png"
       
     
       alt="Image" />
@@ -464,11 +498,12 @@
 
 
 </p>
+<hr>
 
-<h2 id="problem">
-  Problem
+<h2 id="scripted-events">
+  Scripted Events
   
-  <a hidden class="anchor" href="#problem">
+  <a hidden class="anchor" href="#scripted-events">
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"/></svg>
 
@@ -476,7 +511,10 @@
  </a>
   
 </h2>
-<p>Managing multiple bots manually is error-prone and inefficient.</p>
+<p>For our scripted event we wanted to have an enemy fall down from the mountain and drop a key for the player, so they could enter a dungeon. There&rsquo;s an inside joke about this &ldquo;Falling Man&rdquo; event within our group, it was a while until I was able to let the task go, partly because I was confident in how fast I would be able to implement it. Of course, I greatly underestimated how much work goes into making one when there&rsquo;s so little to work with. First and foremost I had to create states for the player: ones where they were free to move, and a &ldquo;non-interactive&rdquo; state that would null all movement input and momentum. Then, I had to create a camera controller that would follow and lerp to points of interests so we could lead the player. I also needed a text-system that would describe certain key points, such as &ldquo;The Guard dropped a key!&rdquo; in the case of our scripted event, since we deemed it to be easier than modelling and creatign an object for the key, that, and text is much more re-usable (which we eventually did use for our tutorials). Lastly came the falling man, of course. He was instaniating at the top of the mountain, played some audio when he fell, and then was animated when he landed the ground (with a fancy puff of dirt and dust from my VFX system).</p>
+<p>Perfect, right?</p>
+<p>Of course there were issues. Not only would this repeat every time we exited and re-entered the area, but the falling man followed you into different levels. Every single &ldquo;scene&rdquo; we had now had its own falling man. You would constantly get interrupted by the camera panning over with a scream, until he just landed somewhere in your level. This was of course because we were in the middle of working on our persistence flags in the game, and even our asset loading/unloading, which I got to dip my toes into to solve this issue. To this day it&rsquo;s among the funniest bugs I&rsquo;ve encountered.</p>
+<p>Lastly of course, was the chery on top, of getting to unlock the iron gate which allowed you to continue into the dungeon, and eventually climb the mountain to fight the boss in our game.</p>
 
 
 

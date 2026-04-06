@@ -405,7 +405,10 @@
         <nav id="TableOfContents">
   <ul>
     <li><a href="#overview">Overview</a></li>
-    <li><a href="#problem">Problem</a></li>
+    <li><a href="#cloud-api">Cloud API</a></li>
+    <li><a href="#enemies">Enemies</a></li>
+    <li><a href="#despite-this-it-gave-the-perfect-behaviour-for-this-top-down-stealth-game-the-enemies-behaved-in-predictable-patterns-follow-patrolpoints-investigated-sounds-and-attacked-the-player-when-they-got-caught-perfect-for-a-game-where-the-player-needs-to-be-able-to-read-and-plan-ahead-for-how-the-enemies-react">Despite this, it gave the perfect behaviour for this top-down stealth game. The enemies behaved in predictable patterns follow patrolpoints, investigated sounds, and attacked the player when they got caught. Perfect for a game where the player needs to be able to &ldquo;read&rdquo; and plan ahead for how the enemies react.</a></li>
+    <li><a href="#diegetic-ui---player-office">Diegetic UI - Player Office</a></li>
   </ul>
 </nav>
       </div>
@@ -427,48 +430,13 @@
  </a>
   
 </h2>
-<p>Published Game on Steam</p>
-<p>
+<p>Published Game on Steam, working in a small team of six with, primarily working as a solo developer for all gameplay. I was resonsibile for enemies, player, currencies, level progression, and much more, such as connecting our game to the Unity 3D Dashboard API for seamless tweaking of values and gameplay enemeies without a need of patches, and telemetry work to track individual players progress.</p>
+<hr>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h2 id="cloud-api">
+  Cloud API
   
-  
-  
-
-  
-    <img loading="" 
-
-    
-      
-        src="/AlexanderMelander/posts/bpm/header.png"
-      
-    
-      alt="Image" />
-  
-
-
-
-
-</p>
-
-<h2 id="problem">
-  Problem
-  
-  <a hidden class="anchor" href="#problem">
+  <a hidden class="anchor" href="#cloud-api">
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"/></svg>
 
@@ -476,7 +444,48 @@
  </a>
   
 </h2>
-<p>Managing multiple bots manually is error-prone and inefficient.</p>
+<p>Our implementation on CloudAPI allowed us to tweak values allowed us to save the settings of players, enemies, and other states. We could tweak the stats of our enemies to make them more agressive, have bigger vision cones, make them faster, more idle, etc&hellip; It was extremely exciting to watch someone play the game, and then tweak the experience before their eyes.</p>
+<p>Together with the DataPersistanceManager I made we could modify things very easily, and keep track of each indivudual players stats, progress, how much cheese they collected, evidence, and which levels they had unlocked. It was one of the more exciting parts during my proffesional work, and there was so much more I wanted to do. With the end of the project it sadly became a lot of &ldquo;TODOs&rdquo; in the project files however, but in that short period I learned incredibly much about developing games. There is so much more than just making gameplay, or even editors and tools. Watching every unique profile put the scope of these projects into perspective for me.</p>
+<hr>
+
+<h2 id="enemies">
+  Enemies
+  
+  <a hidden class="anchor" href="#enemies">
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"/></svg>
+
+
+ </a>
+  
+</h2>
+<p>My favourite part of the project was by far working with the enemies. This is where I first fell in love with statemachines and their potential simplicity and endless potential. It&rsquo;s so neat working in clear-cut states, and the ease of debugging make iterating on them much simpler. As this was my first professional job and I had very little knowledge in programming prior, there is much I want to change with my previous implementation. It was simple and clean, but I did not properly divide the classes, meaning my EnemyController ended up getting pretty bloated despite the fact that StateMachiens were properly implemented.</p>
+
+<h2 id="despite-this-it-gave-the-perfect-behaviour-for-this-top-down-stealth-game-the-enemies-behaved-in-predictable-patterns-follow-patrolpoints-investigated-sounds-and-attacked-the-player-when-they-got-caught-perfect-for-a-game-where-the-player-needs-to-be-able-to-read-and-plan-ahead-for-how-the-enemies-react">
+  Despite this, it gave the perfect behaviour for this top-down stealth game. The enemies behaved in predictable patterns follow patrolpoints, investigated sounds, and attacked the player when they got caught. Perfect for a game where the player needs to be able to &ldquo;read&rdquo; and plan ahead for how the enemies react.
+  
+  <a hidden class="anchor" href="#despite-this-it-gave-the-perfect-behaviour-for-this-top-down-stealth-game-the-enemies-behaved-in-predictable-patterns-follow-patrolpoints-investigated-sounds-and-attacked-the-player-when-they-got-caught-perfect-for-a-game-where-the-player-needs-to-be-able-to-read-and-plan-ahead-for-how-the-enemies-react">
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"/></svg>
+
+
+ </a>
+  
+</h2>
+
+<h2 id="diegetic-ui---player-office">
+  Diegetic UI - Player Office
+  
+  <a hidden class="anchor" href="#diegetic-ui---player-office">
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"/></svg>
+
+
+ </a>
+  
+</h2>
+<p>Another favourite of mine is the office area. We wannted a diegetic UI for our main menum. The players &ldquo;office&rdquo; as they are an detective was meant to be highly interactive. To point a few things out, when collecting enough evidence in the first city for example, the player would go to their board and &ldquo;pin&rdquo; a picture to unlock the new level, with a red yarn being drawn to it. You&rsquo;d unlock this &ldquo;grid&rdquo; of levels that you&rsquo;d pick from.</p>
+<p>If you wanted to delete your progress, you&rsquo;d go to the trashcan to &ldquo;reset&rdquo;, and to exit the game, you&rsquo;d go to the door to leave the office. Change clothes? There was a wardrove that opened and showed the clothes and hats you unlocked. Of course, you press &ldquo;Esc&rdquo; at any time to open your journal and select any of the options at any time too, so you didn&rsquo;t need to interact with the office if you really didn&rsquo;t want to, but it was such a neat and &ldquo;fun&rdquo; way to make everything feel so much more alive.</p>
 
 
 

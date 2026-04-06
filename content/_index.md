@@ -5,9 +5,7 @@ draft: false
 showHeadingAnchors: false
 ---
 
-Kayal is a Hugo theme designed to be minimal and lightweight, with markdown-ish aesthetics for personal blog sites.
+With over 4 years of Game Design education, and 6 months of professional work in the industry, I'm now looking to finish my formal Game Proggraming education with you!
 
-You can find the source and config files of this site in [here](https://github.com/mnjm/kayal/tree/exampleSite).
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum, tellus non varius viverra, massa justo porttitor risus, quis tempor ante magna at elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In imperdiet metus arcu, sed mattis metus vehicula non. Integer quis est sem. Ut hendrerit lobortis diam sit amet malesuada. Quisque lobortis nisi et ipsum aliquam placerat. Sed ullamcorper felis nec ex facilisis, eget faucibus turpis venenatis.
+If you're interested in contacting me, or see my CV, you can use these icons at any time in the top right corner!
 

@@ -4,10 +4,17 @@
     <title>C&#43;&#43; on Alexander Melander</title>
     <link>http://localhost:1313/AlexanderMelander/tags/c&#43;&#43;/</link>
     <description>Recent content in C&#43;&#43; on Alexander Melander</description>
-    <generator>Hugo -- 0.157.0</generator>
+    <generator>Hugo -- 0.160.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/AlexanderMelander/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inverse Kinematics using FABRIK</title>
+      <link>http://localhost:1313/AlexanderMelander/posts/specialisering/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/posts/specialisering/</guid>
+      <description>Building a robot spider that can plant its feet on uneven terrain</description>
+    </item>
     <item>
       <title>BotOps</title>
       <link>http://localhost:1313/AlexanderMelander/posts/botops/</link>
