@@ -391,10 +391,10 @@ html:not(.dark) #sun {
 }
 
 .avatar img {
-  height: 100px;
-  width: 100px;
-  padding: 8px;
-  border-radius: 50%;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
 }
 
 .avatar.top {

@@ -49,7 +49,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/AlexanderMelander/tags/in-house-engine/</loc>
+    <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/AlexanderMelander/tags/progression/</loc>
+    <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/AlexanderMelander/tags/sublevel/navmesh-loading/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -86,12 +98,6 @@
   </url>
   <url>
     <loc>http://localhost:1313/AlexanderMelander/tags/flipbook-vfx/</loc>
-    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/AlexanderMelander/tags/in-house-engine/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

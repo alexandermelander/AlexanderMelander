@@ -8,7 +8,7 @@ tags: ["C++", "Wave System", "Progression", "Weapons and Animations"]
 
 ## Overview
 
-Published Game on Steam, working in a small team of six with, primarily working as a solo developer for all gameplay. I was resonsibile for enemies, player, currencies, level progression, and much more, such as connecting our game to the Unity 3D Dashboard API for seamless tweaking of values and gameplay enemeies without a need of patches, and telemetry work to track individual players progress.
+[Published Game on Steam](https://store.steampowered.com/app/2340670/Brie_Parmesan_Mysteries/), working in a small team of six with, primarily working as a solo developer for all gameplay. I was resonsibile for enemies, player, currencies, level progression, and much more, such as connecting our game to the Unity 3D Dashboard API for seamless tweaking of values and gameplay enemeies without a need of patches, and telemetry work to track individual players progress.
 
 ---
 ## Cloud API
@@ -22,7 +22,8 @@ Together with the DataPersistanceManager I made we could modify things very easi
 
 My favourite part of the project was by far working with the enemies. This is where I first fell in love with statemachines and their potential simplicity and endless potential. It's so neat working in clear-cut states, and the ease of debugging make iterating on them much simpler. As this was my first professional job and I had very little knowledge in programming prior, there is much I want to change with my previous implementation. It was simple and clean, but I did not properly divide the classes, meaning my EnemyController ended up getting pretty bloated despite the fact that StateMachiens were properly implemented.
 
-Despite this, it gave the perfect behaviour for this top-down stealth game. The enemies behaved in predictable patterns follow patrolpoints, investigated sounds, and attacked the player when they got caught. Perfect for a game where the player needs to be able to "read" and plan ahead for how the enemies react.
+Despite this, it gave the perfect behaviour for this top-down stealth game. The enemies behaved in predictable patterns follow patrolpoints, investigated sounds, and attacked the player when they got caught. Perfect for a game where the player needs to be able to read and plan ahead for how the enemies react.
+
 ---
 ## Diegetic UI - Player Office
 

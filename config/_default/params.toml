@@ -46,7 +46,7 @@ showRecentLabel = "Featured"
 # Number of recent items to show.
 showRecentItems = 4
 # Whether to display a "Show more" link at the end of recent section that directs to `showMoreDest`.
-showMore = true
+showMore = false
 showMoreDest = "posts"
 [homepage.profile]
 # [Optional] Displayed at the top of your homepage.
