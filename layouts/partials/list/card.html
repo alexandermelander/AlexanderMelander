@@ -1,0 +1,33 @@
+{{ $showDate := .showDate }}
+{{ $lvl := .lvl }}
+{{ with .page }}
+<li>
+    <div>
+    <h{{$lvl}}>
+    {{ with .Params.externalUrl }}
+        <a href="{{ . }}" target="_blank" rel="external">
+    {{ else }}
+        <a href="{{ .RelPermalink }}">
+    {{ end }}
+    {{ .LinkTitle | emojify }} </a>
+    </h{{$lvl}}>
+    {{ partial "single/meta.html" . }}
+    {{ template "partials/home/pg-desc.html" . }}
+
+    {{ if .Params.tags }}
+    <div class="card-tags">
+      {{ range .Params.tags }}
+        <span class="tag">{{ . }}</span>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  </div>
+
+    <!-- Thumbnail - Use coverImg as thumbnail -->
+    {{ if .Params.coverImg }}
+      {{ $imgData := dict "Page" . "URL" .Params.coverImg "Alt" .LinkTitle "Size" "x150" "Style" "thumbnail" }}
+      {{ partial "image-renderer.html" $imgData }}
+    {{ end }}
+</li>
+{{ end }}

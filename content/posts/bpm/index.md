@@ -1,14 +1,14 @@
 ---
 title: "Brie Parmesan Mysteries"
 date: 2023-04-01
-description: "Published Game on Steam"
+summary: "[Published Game on Steam](https://store.steampowered.com/app/2340670/Brie_Parmesan_Mysteries/), I was responsible for the majority of gameplay, and utilizing the Unity 3D Dashboard API for seamless tweaking of values and gameplay enemeies without a need of patches, and telemetry work to track individual players progress."
 coverImg: "header.png"
-tags: ["C++", "Wave System", "Progression", "Weapons and Animations"]
+tags: ["C#", "Unity", "Cloud Settings", "StateMachines", "Diegetic UI", "Player"]
 ---
 
 ## Overview
 
-[Published Game on Steam](https://store.steampowered.com/app/2340670/Brie_Parmesan_Mysteries/), working in a small team of six with, primarily working as a solo developer for all gameplay. I was resonsibile for enemies, player, currencies, level progression, and much more, such as connecting our game to the Unity 3D Dashboard API for seamless tweaking of values and gameplay enemeies without a need of patches, and telemetry work to track individual players progress.
+[Published Game on Steam](https://store.steampowered.com/app/2340670/Brie_Parmesan_Mysteries/), I was responsible for the majority of gameplay, and utilizing the Unity 3D Dashboard API for seamless tweaking of values and gameplay enemeies without a need of patches, and telemetry work to track individual players progress.
 
 ---
 ## Cloud API

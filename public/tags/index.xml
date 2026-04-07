@@ -4,7 +4,7 @@
     <title>Tags on Alexander Melander</title>
     <link>http://localhost:1313/AlexanderMelander/tags/</link>
     <description>Recent content in Tags on Alexander Melander</description>
-    <generator>Hugo -- 0.160.0</generator>
+    <generator>Hugo -- 0.157.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/AlexanderMelander/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -65,10 +65,31 @@
       <description></description>
     </item>
     <item>
-      <title>Weapons and Animations</title>
-      <link>http://localhost:1313/AlexanderMelander/tags/weapons-and-animations/</link>
+      <title>Weapons</title>
+      <link>http://localhost:1313/AlexanderMelander/tags/weapons/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/AlexanderMelander/tags/weapons-and-animations/</guid>
+      <guid>http://localhost:1313/AlexanderMelander/tags/weapons/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C#</title>
+      <link>http://localhost:1313/AlexanderMelander/tags/c%23/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/tags/c%23/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Settings</title>
+      <link>http://localhost:1313/AlexanderMelander/tags/cloud-settings/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/tags/cloud-settings/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Diegetic UI</title>
+      <link>http://localhost:1313/AlexanderMelander/tags/diegetic-ui/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/tags/diegetic-ui/</guid>
       <description></description>
     </item>
     <item>
@@ -86,10 +107,31 @@
       <description></description>
     </item>
     <item>
+      <title>StateMachines</title>
+      <link>http://localhost:1313/AlexanderMelander/tags/statemachines/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/tags/statemachines/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Time Slow</title>
       <link>http://localhost:1313/AlexanderMelander/tags/time-slow/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/AlexanderMelander/tags/time-slow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unity</title>
+      <link>http://localhost:1313/AlexanderMelander/tags/unity/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/tags/unity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weapons and Animations</title>
+      <link>http://localhost:1313/AlexanderMelander/tags/weapons-and-animations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/tags/weapons-and-animations/</guid>
       <description></description>
     </item>
   </channel>

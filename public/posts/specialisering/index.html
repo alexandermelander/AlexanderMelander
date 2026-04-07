@@ -14,9 +14,9 @@
 
   
   
-  <meta name="description" content="Building a robot spider that can plant its feet on uneven terrain" />
+  <meta name="description" content="Building a four-legged robotic spider that can walk on uneven surfaces using inverse kinematics in C&#43;&#43; by using F.A.B.R.I.K, an industry standard method implemented in engines such as Unreal and Unity." />
   
-  <meta name="keywords" content="C&#43;&#43;, Inverse Kinematics, FABRIK, Animation, " />
+  <meta name="keywords" content="C&#43;&#43;, Inverse Kinematics, FABRIK, Animation, In-House Engine, " />
   <link rel="canonical" href="http://localhost:1313/AlexanderMelander/posts/specialisering/" />
 
   
@@ -46,7 +46,7 @@
   <meta property="og:url" content="http://localhost:1313/AlexanderMelander/posts/specialisering/">
   <meta property="og:site_name" content="Alexander Melander">
   <meta property="og:title" content="Inverse Kinematics using FABRIK">
-  <meta property="og:description" content="Building a robot spider that can plant its feet on uneven terrain">
+  <meta property="og:description" content="Building a four-legged robotic spider that can walk on uneven surfaces using inverse kinematics in C&#43;&#43; by using F.A.B.R.I.K, an industry standard method implemented in engines such as Unreal and Unity.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -56,6 +56,7 @@
     <meta property="article:tag" content="Inverse Kinematics">
     <meta property="article:tag" content="FABRIK">
     <meta property="article:tag" content="Animation">
+    <meta property="article:tag" content="In-House Engine">
 
   
     <meta property="og:image" content="http://localhost:1313/AlexanderMelander/header.png" />
@@ -63,7 +64,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Inverse Kinematics using FABRIK">
-  <meta name="twitter:description" content="Building a robot spider that can plant its feet on uneven terrain">
+  <meta name="twitter:description" content="Building a four-legged robotic spider that can walk on uneven surfaces using inverse kinematics in C&#43;&#43; by using F.A.B.R.I.K, an industry standard method implemented in engines such as Unreal and Unity.">
 
   
     <meta name="twitter:image" content="http://localhost:1313/AlexanderMelander/header.png" />
@@ -387,6 +388,8 @@
   
   <a class="tag" href="/AlexanderMelander/tags/animation/">Animation</a>
   
+  <a class="tag" href="/AlexanderMelander/tags/in-house-engine/">In-House Engine</a>
+  
 </p>
 
 
@@ -406,7 +409,7 @@
   <ul>
     <li><a href="#overview">Overview</a></li>
     <li><a href="#goal">Goal</a></li>
-    <li><a href="#building-the-leg-chains">Building the leg chains</a></li>
+    <li><a href="#building-the-leg-chains">Building the Leg Chains</a></li>
     <li><a href="#solving-with-fabrik">Solving with FABRIK</a></li>
     <li><a href="#rebuilding-the-mesh">Rebuilding the Mesh</a></li>
   </ul>
@@ -430,8 +433,12 @@
  </a>
   
 </h2>
-<p>This post covers my journey in building a four-legged robotic spider that can walk on uneven surfaces using inverse kinematics in C++, with the goal of keeping each foot planted on the ground while the body moves, and if it moves too far, revaluate the legs positions and move them to their new target.</p>
-<hr>
+<p>This post covers my journey in building a four-legged robotic spider that can walk on uneven surfaces using inverse kinematics in C++ by using F.A.B.R.I.K, an industry standard method implemented in engines such as Unreal and Unity.</p>
+<video autoplay muted loop playsinline preload="metadata" width="100%">
+  <source src="Spider.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+---
 
 <h2 id="goal">
   Goal
@@ -445,14 +452,11 @@
   
 </h2>
 <p>The spider has several legs, and each leg should behave like a small chain of joints. The body needed to move independently, but the feet should remain planted on the terrain even at differing heights.
-To do that, I used FABRIK, which is a positional inverse kinematics solver, and is conceptually very simple and cheaper than alternatives. It&rsquo;s split up into mainly three parts:</p>
-<p>First, it needs to read the leg chain from the skeleton.</p>
-<p>Second, solve new joint positions in world space.</p>
-<p>Third is to convert that solved chain back into bone rotations so the mesh would actually follow it, which turned out to be the hardest part by far.</p>
+To do that, I used FABRIK, which is a positional inverse kinematics solver, and is conceptually very simple and cheaper than alternatives.</p>
 <hr>
 
 <h2 id="building-the-leg-chains">
-  Building the leg chains
+  Building the Leg Chains
   
   <a hidden class="anchor" href="#building-the-leg-chains">
 
@@ -546,9 +550,9 @@ But before running FABRIK, you need to convert the current animated pose into mo
 </h2>
 <p>At this point, things are still relative simple. Taking one leg at a time, we convert what we&rsquo;ve stored from the spider into a generic IKChain which holds the joints position and lengths, and total length of the chain.
 Extremely short and sweet. And after population the new IKChain, we have everything to sovle it!</p>
-<p>The first thing the solver does is handle the simplest edge case, which is when the target is too far away to ever be reached. If the distance from the root joint to the target is greater than the total length of the chain, then there is no fancy solution to find. The only thing the leg can do is stretch itself out as far as possible in the direction of the target. So instead of iterating, the code just walks through the chain from root to tip and places each next joint along that direction while preserving the correct segment length.</p>
-<p>If the target is reachable, that is when the actual FABRIK iterations begin. The solve works in two passes that repeat over and over until the foot is close enough to the target. First comes the backward pass. Here, the end effector is snapped directly onto the target, because that is ultimately where we want the chain to end. Then the solver walks backward through the leg, moving each earlier joint so that it stays the correct distance away from its child.</p>
-<p>After that comes the forward pass, which fixes the other side of the problem. The backward pass gets the foot where it should go, but it can pull the root away from where it belongs. Since the root joint is supposed to stay anchored to the spider’s body, the solver now snaps the root back to its original position and walks forward through the chain again. This time, each child joint is repositioned so that every segment length is preserved from the root outward.</p>
+<p>The first thing the solver does is handle the simplest edge case, which is when the target is too far away to ever be reached. If the distance from the root joint to the target is greater than the total length of the chain, then there is no fancy solution to find. The only thing the leg can do is stretch itself out as far as possible in the direction of the target.</p>
+<p>The solve works in two passes that repeat over and over until the foot is close enough to the target. The end effector is snapped directly onto the target, because that is ultimately where we want the chain to end. Then the solver walks backward through the leg, moving each earlier joint so that it stays the correct distance away from its child.</p>
+<p>The backward pass gets the foot where it should go, but it can pull the root away from where it belongs. Since the root joint is supposed to stay anchored to the spider’s body, the solver now snaps the root back to its original position and walks forward through the chain again. This time, each child joint is repositioned so that every segment length is preserved from the root outward.</p>
 <details>
   <summary>Show FABRIK solve code</summary>
   <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">bool</span> FABRIKSolver<span style="color:#f92672">::</span>Solve(IKChain<span style="color:#f92672">&amp;</span> aChain, <span style="color:#66d9ef">const</span> Tga<span style="color:#f92672">::</span>Vector3f<span style="color:#f92672">&amp;</span> aTargetWorld, <span style="color:#66d9ef">int</span> aMaxIterations, <span style="color:#66d9ef">float</span> aTolerance)
@@ -709,9 +713,9 @@ Extremely short and sweet. And after population the new IKChain, we have everyth
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div></details>
-<p>Luckily, the biggest issue turned out to have a much simpler cause than I first expected. I was applying each new IK solution on top of the previous frame&rsquo;s already modified pose, which meant the values kept accumulating and mutating further and further away from the original skeleton. That was why the spider would eventually bend into absurd shapes, why the joint rotations spiraled out of control, and why parts of the leg sometimes looked like they were completely disconnecting from one another. It was genuinely horrifying to watch.</p>
+<p>I was applying each new IK solution on top of the previous frame&rsquo;s already modified pose, which meant the values kept accumulating and mutating further and further away from the original skeleton. That was why the spider would eventually bend into absurd shapes, why the joint rotations spiraled out of control, and why parts of the leg sometimes looked like they were completely disconnecting from one another.</p>
 <p>The fix was to cache the original clean pose and restart from that every frame before applying IK. As soon as I did that, the result became dramatically more stable. That did not solve every remaining issue with reconstruction or rotation, but it removed the feedback loop that had been corrupting the entire leg system over time. Once that was under control, I could finally move on to the more interesting part, which was improving how the spider actually stepped and moved across the terrain.</p>
-<p>At that point, it was mostly cleaning up magic numbers and tweaking tolerances, speeds, and other values I had already established, and adding leg groups so the spider would walk &ldquo;realistically&rdquo;, meaning one front and one back leg at a time.</p>
+<p>It was mostly cleaning up magic numbers and tweaking tolerances, speeds, and other values I had already established, and adding leg groups so the spider would walk &ldquo;realistically&rdquo;, meaning one front and one back leg at a time. Which lead the result you saw above.</p>
 <video controls preload="metadata" width="100%">
   <source src="Spider.mp4" type="video/mp4">
   Your browser does not support the video tag.

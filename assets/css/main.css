@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 
+
 h1::before { content: ' '; }
 h2::before { content: ' '; }
 h3::before { content: ' '; }
@@ -124,6 +125,21 @@ figcaption {
 
 figure h4::before {
   content: '↳ ';
+}
+
+.card-tags {
+  margin-top: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 6px;
+  margin-top: 6px;
+  padding: 2px 4px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  background-color: var(--secondary-color-dark);
+  border: 1px solid var(--tertiary-color);
 }
 
 /* Code blocks */
@@ -509,10 +525,17 @@ html:not(.dark) #sun {
   align-items: flex-start;
 }
 
+.lst-card:has(.thumbnail) > li {
+  align-items: center;   /* vertical alignment */
+}
+
 .lst-card .thumbnail {
-  width: auto;
+  display: block;
+  margin: 0 auto;
   height: 130px;
-  margin: 0 2px;
+  width: 230px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 @media (max-width: 600px) {

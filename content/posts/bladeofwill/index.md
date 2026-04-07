@@ -1,7 +1,7 @@
 ---
 title: "Blade of Will"
 date: 2023-04-01
-description: "Intense 2D Hack/Slash Sidescroller"
+summary: "Intense 2D Hack/Slash Sidescroller where my main responsibilites included VFX, and Scripted Events tied to the player progression"
 coverImg: "header.png"
 tags: ["C++", "Time Slow", "Scripted Events", "Flipbook VFX", "In-House Engine"]
 ---

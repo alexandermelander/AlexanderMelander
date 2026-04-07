@@ -14,9 +14,9 @@
 
   
   
-  <meta name="description" content="Group Project 6 at TGA, Waved-based shooter." />
+  <meta name="description" content="A Call Of Duty Zombies-inspired Robot shooter, where I was primarily responsible for the Enemy Wave System and Player Progression, as well as animation-handling and gunplay, as well as a Sub-Level system allowing our leveldesigners to stitch together multiple scenes." />
   
-  <meta name="keywords" content="C&#43;&#43;, Wave System, Progression, Weapons and Animations, Sublevel/Navmesh Loading, In-House Engine, " />
+  <meta name="keywords" content="C&#43;&#43;, Wave System, Progression, Weapons, Animation, Sublevel/Navmesh Loading, In-House Engine, " />
   <link rel="canonical" href="http://localhost:1313/AlexanderMelander/posts/botops/" />
 
   
@@ -46,7 +46,7 @@
   <meta property="og:url" content="http://localhost:1313/AlexanderMelander/posts/botops/">
   <meta property="og:site_name" content="Alexander Melander">
   <meta property="og:title" content="BotOps">
-  <meta property="og:description" content="Group Project 6 at TGA, Waved-based shooter.">
+  <meta property="og:description" content="A Call Of Duty Zombies-inspired Robot shooter, where I was primarily responsible for the Enemy Wave System and Player Progression, as well as animation-handling and gunplay, as well as a Sub-Level system allowing our leveldesigners to stitch together multiple scenes.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -55,9 +55,9 @@
     <meta property="article:tag" content="C&#43;&#43;">
     <meta property="article:tag" content="Wave System">
     <meta property="article:tag" content="Progression">
-    <meta property="article:tag" content="Weapons and Animations">
+    <meta property="article:tag" content="Weapons">
+    <meta property="article:tag" content="Animation">
     <meta property="article:tag" content="Sublevel/Navmesh Loading">
-    <meta property="article:tag" content="In-House Engine">
 
   
     <meta property="og:image" content="http://localhost:1313/AlexanderMelander/header.png" />
@@ -65,7 +65,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="BotOps">
-  <meta name="twitter:description" content="Group Project 6 at TGA, Waved-based shooter.">
+  <meta name="twitter:description" content="A Call Of Duty Zombies-inspired Robot shooter, where I was primarily responsible for the Enemy Wave System and Player Progression, as well as animation-handling and gunplay, as well as a Sub-Level system allowing our leveldesigners to stitch together multiple scenes.">
 
   
     <meta name="twitter:image" content="http://localhost:1313/AlexanderMelander/header.png" />
@@ -387,7 +387,9 @@
   
   <a class="tag" href="/AlexanderMelander/tags/progression/">Progression</a>
   
-  <a class="tag" href="/AlexanderMelander/tags/weapons-and-animations/">Weapons and Animations</a>
+  <a class="tag" href="/AlexanderMelander/tags/weapons/">Weapons</a>
+  
+  <a class="tag" href="/AlexanderMelander/tags/animation/">Animation</a>
   
   <a class="tag" href="/AlexanderMelander/tags/sublevel/navmesh-loading/">Sublevel/Navmesh Loading</a>
   
@@ -622,8 +624,8 @@
 </span></span><span style="display:flex;"><span>    std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Successfully loaded and stitched sublevel: &#34;</span> <span style="color:#f92672">&lt;&lt;</span> aSubLevelName <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div></details>
-<p>I&rsquo;ll be honest, I&rsquo;m not super proud of the way this one was handled, mostly because the way our light components are handled are somewhat different from the rest. The nice thing is that it&rsquo;s mostly handled exactly as loading in any other level, and this function could potentially be multi-threaded to eventually allow for seamless loading in and loading out of segments of a single level, much how Unreal&rsquo;s sublevel system works. I&rsquo;m hoping for our final project I&rsquo;ll get to continue working on this to make that a reality. How cool wouldn&rsquo;t it be to have a game without loading screens? These projects are small enough that we could totally be able to do it with a little bit of clever designing of the levels.</p>
-<p>One problem still remained, however: all these levels have different NavMeshes, and we didn&rsquo;t want to generate one big navmesh that was always active. So instead I created a function to stich together the closest NavMesh points to create a coherent one, without gaps so the AI could seamlessly traverse it.</p>
+<p>I&rsquo;ll be honest, I&rsquo;m not super proud of the way this one was implemented, mostly because the way our light components are treated are somewhat different from the other game objects and components. The nice thing is that it&rsquo;s mostly handled exactly as loading in any other level, and this function could potentially be multi-threaded to eventually allow for seamless loading in and loading out of segments of a single level, much how Unreal&rsquo;s sublevel system works. I&rsquo;m hoping for our final project I&rsquo;ll get to continue working on this to make that a reality. How cool wouldn&rsquo;t it be to have a game without loading screens? These projects are small enough that we could totally be able to do it with a little bit of clever designing of the levels.</p>
+<p>One problem still remained, however: all these levels have different NavMeshes, and we didn&rsquo;t want to generate one big navmesh everytime we started the level, that would be too expensive. So instead I created a function to stich together the closest NavMesh points to create a coherent one, without gaps so the AI could seamlessly traverse it.</p>
 <details>
   <summary>Show Navmesh Welding</summary>
   <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> rhe<span style="color:#f92672">::</span>Navmesh<span style="color:#f92672">::</span>CalculateCrossMeshConnections()

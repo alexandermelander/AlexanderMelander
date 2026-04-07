@@ -1,9 +1,9 @@
 ---
 title: "BotOps"
 date: 2026-03-17
-description: "Group Project 6 at TGA, Waved-based shooter."
+summary: "A Call Of Duty Zombies-inspired Robot shooter, where I was primarily responsible for the Enemy Wave System and Player Progression, as well as animation-handling and gunplay, as well as a Sub-Level system allowing our leveldesigners to stitch together multiple scenes."
 coverImg: "header.png"
-tags: ["C++", "Wave System", "Progression", "Weapons and Animations", "Sublevel/Navmesh Loading", "In-House Engine"]
+tags: ["C++", "Wave System", "Progression", "Weapons", "Animation", "Sublevel/Navmesh Loading", "In-House Engine"]
 ---
 
 ## Overview
@@ -192,9 +192,9 @@ void LevelHandler::LoadAndStitchSubLevel(Level& aLevel, const std::string& aSubL
 ```
 {{% /details %}}
 
-I'll be honest, I'm not super proud of the way this one was handled, mostly because the way our light components are handled are somewhat different from the rest. The nice thing is that it's mostly handled exactly as loading in any other level, and this function could potentially be multi-threaded to eventually allow for seamless loading in and loading out of segments of a single level, much how Unreal's sublevel system works. I'm hoping for our final project I'll get to continue working on this to make that a reality. How cool wouldn't it be to have a game without loading screens? These projects are small enough that we could totally be able to do it with a little bit of clever designing of the levels.
+I'll be honest, I'm not super proud of the way this one was implemented, mostly because the way our light components are treated are somewhat different from the other game objects and components. The nice thing is that it's mostly handled exactly as loading in any other level, and this function could potentially be multi-threaded to eventually allow for seamless loading in and loading out of segments of a single level, much how Unreal's sublevel system works. I'm hoping for our final project I'll get to continue working on this to make that a reality. How cool wouldn't it be to have a game without loading screens? These projects are small enough that we could totally be able to do it with a little bit of clever designing of the levels.
 
-One problem still remained, however: all these levels have different NavMeshes, and we didn't want to generate one big navmesh that was always active. So instead I created a function to stich together the closest NavMesh points to create a coherent one, without gaps so the AI could seamlessly traverse it.
+One problem still remained, however: all these levels have different NavMeshes, and we didn't want to generate one big navmesh everytime we started the level, that would be too expensive. So instead I created a function to stich together the closest NavMesh points to create a coherent one, without gaps so the AI could seamlessly traverse it.
 
 
 {{% details summary="Show Navmesh Welding" %}}
