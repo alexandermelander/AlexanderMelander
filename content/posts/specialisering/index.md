@@ -3,6 +3,7 @@ title: "Inverse Kinematics using FABRIK"
 date: 2026-04-06
 summary: "Building a four-legged robotic spider that can walk on uneven surfaces using inverse kinematics in C++ by using F.A.B.R.I.K, an industry standard method implemented in engines such as Unreal and Unity."
 coverImg: "header.png"
+hideCoverInPost: true
 tags: ["C++", "Inverse Kinematics", "FABRIK", "Animation", "In-House Engine"]
 ---
 
@@ -14,7 +15,6 @@ This post covers my journey in building a four-legged robotic spider that can wa
   <source src="Spider.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
----
 
 ## Goal
 
@@ -26,7 +26,6 @@ To do that, I used FABRIK, which is a positional inverse kinematics solver, and 
 ## Building the Leg Chains
 
 Each leg is represented as a set of joint indices from the skeleton. The last joint is the foot or end effector, which we will move to the target, then iteratively reposition the rest of the chain during backward and forward passes while preserving segment lengths.
-But before running FABRIK, you need to convert the current animated pose into model space and then into world space so you can get a chain of actual positions. Luckily I was working in our own engine, which already had ways to store our skeleton and poses in our AnimatedModelComponents, so all I really had to change before I could get to work was to save away the default pose when it was missing animations and save it into a new struct **SpiderLegChain**. After that, I had a nice default pose to start working with.
 
 {{% details summary="Show Leg Chain code" %}}
 ```cpp
@@ -60,7 +59,7 @@ But before running FABRIK, you need to convert the current animated pose into mo
     }
 ```
 {{% /details %}}
-
+But before running FABRIK, you need to convert the current animated pose into model space and then into world space so you can get a chain of actual positions. Luckily I was working in our own engine, which already had ways to store our skeleton and poses in our AnimatedModelComponents, so all I really had to change before I could get to work was to save away the default pose when it was missing animations and save it into a new struct **SpiderLegChain**. After that, I had a nice default pose to start working with.
 {{% details summary="Show Foot Target code" %}}
 ```cpp
 Tga::Vector3f Spider::BuildFootTarget(SpiderLegChain& aLegChain, const IKChain& aChain) const

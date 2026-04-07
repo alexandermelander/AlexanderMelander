@@ -314,48 +314,11 @@
 
 
 
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-    <img loading="eager" class="cover-img"
-
-    
-      
-        src="/AlexanderMelander/posts/specialisering/header.png"
-      
-    
-      alt="Cover Image" />
-  
-
-
-
-
-
 
 
 
 
 <h1 class="pg-title">Inverse Kinematics using FABRIK</h1>
-
 
 <div class="meta">
   
@@ -438,7 +401,6 @@
   <source src="Spider.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
----
 
 <h2 id="goal">
   Goal
@@ -466,8 +428,7 @@ To do that, I used FABRIK, which is a positional inverse kinematics solver, and 
  </a>
   
 </h2>
-<p>Each leg is represented as a set of joint indices from the skeleton. The last joint is the foot or end effector, which we will move to the target, then iteratively reposition the rest of the chain during backward and forward passes while preserving segment lengths.
-But before running FABRIK, you need to convert the current animated pose into model space and then into world space so you can get a chain of actual positions. Luckily I was working in our own engine, which already had ways to store our skeleton and poses in our AnimatedModelComponents, so all I really had to change before I could get to work was to save away the default pose when it was missing animations and save it into a new struct <strong>SpiderLegChain</strong>. After that, I had a nice default pose to start working with.</p>
+<p>Each leg is represented as a set of joint indices from the skeleton. The last joint is the foot or end effector, which we will move to the target, then iteratively reposition the rest of the chain during backward and forward passes while preserving segment lengths.</p>
 <details>
   <summary>Show Leg Chain code</summary>
   <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (size_t legIndex <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; legIndex <span style="color:#f92672">&lt;</span> myLegChains.size(); <span style="color:#f92672">++</span>legIndex)
@@ -499,6 +460,7 @@ But before running FABRIK, you need to convert the current animated pose into mo
 </span></span></span><span style="display:flex;"><span>        mySkeleton<span style="color:#f92672">-&gt;</span>ConvertPoseToModelSpace(localPose, modelSpacePose);
 </span></span><span style="display:flex;"><span>    }
 </span></span></code></pre></div></details>
+<p>But before running FABRIK, you need to convert the current animated pose into model space and then into world space so you can get a chain of actual positions. Luckily I was working in our own engine, which already had ways to store our skeleton and poses in our AnimatedModelComponents, so all I really had to change before I could get to work was to save away the default pose when it was missing animations and save it into a new struct <strong>SpiderLegChain</strong>. After that, I had a nice default pose to start working with.</p>
 <details>
   <summary>Show Foot Target code</summary>
   <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>Tga<span style="color:#f92672">::</span>Vector3f Spider<span style="color:#f92672">::</span>BuildFootTarget(SpiderLegChain<span style="color:#f92672">&amp;</span> aLegChain, <span style="color:#66d9ef">const</span> IKChain<span style="color:#f92672">&amp;</span> aChain) <span style="color:#66d9ef">const</span>
@@ -731,7 +693,6 @@ Extremely short and sweet. And after population the new IKChain, we have everyth
 
 
 
-
 <nav class="pagenav">
   
   <div></div>
@@ -744,7 +705,6 @@ Extremely short and sweet. And after population the new IKChain, we have everyth
     </a>
   
 </nav>
-
 
 
 
