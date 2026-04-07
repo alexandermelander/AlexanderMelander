@@ -1,21 +1,21 @@
 ---
 title: "Brie Parmesan Mysteries"
 date: 2023-04-01
-summary: "[Published Game on Steam](https://store.steampowered.com/app/2340670/Brie_Parmesan_Mysteries/), I was responsible for the majority of gameplay, and utilizing the Unity 3D Dashboard API for seamless tweaking of values and gameplay enemeies without a need of patches, and telemetry work to track individual players progress."
+summary: "[Published Game on Steam](https://store.steampowered.com/app/2340670/Brie_Parmesan_Mysteries/), I was responsible for the majority of gameplay, and utilizing the Unity 3D Dashboard API for seamless tweaking of values and gameplay enemies without a need of patches, and telemetry work to track individual players progress."
 coverImg: "header.png"
 tags: ["C#", "Unity", "Cloud Settings", "StateMachines", "Diegetic UI", "Player"]
 ---
 
 ## Overview
 
-[Published Game on Steam](https://store.steampowered.com/app/2340670/Brie_Parmesan_Mysteries/), I was responsible for the majority of gameplay, and utilizing the Unity 3D Dashboard API for seamless tweaking of values and gameplay enemeies without a need of patches, and telemetry work to track individual players progress.
+[Published Game on Steam](https://store.steampowered.com/app/2340670/Brie_Parmesan_Mysteries/), I was responsible for the majority of gameplay, and utilizing the Unity 3D Dashboard API for seamless tweaking of values and gameplay enemies without a need of patches, and telemetry work to track individual players progress.
 
 ---
 ## Cloud API
 
 Our implementation on CloudAPI allowed us to tweak values allowed us to save the settings of players, enemies, and other states. We could tweak the stats of our enemies to make them more agressive, have bigger vision cones, make them faster, more idle, etc... It was extremely exciting to watch someone play the game, and then tweak the experience before their eyes. 
 
-Together with the DataPersistanceManager I made we could modify things very easily, and keep track of each indivudual players stats, progress, how much cheese they collected, evidence, and which levels they had unlocked. It was one of the more exciting parts during my proffesional work, and there was so much more I wanted to do. With the end of the project it sadly became a lot of "TODOs" in the project files however, but in that short period I learned incredibly much about developing games. There is so much more than just making gameplay, or even editors and tools. Watching every unique profile put the scope of these projects into perspective for me.
+Together with the DataPersistanceManager I made we could modify things very easily, and keep track of each indivudual players stats, progress, how much cheese or evidence they collected, and which levels they had unlocked. It was one of the more exciting parts during my proffesional work, and there was so much more I wanted to do. With the end of the project it sadly became a lot of "TODOs" in the project files however, but in that short period I learned incredibly much about developing games. There is so much more than just making gameplay, or even editors and tools. Watching every unique profile put the scope of these projects into perspective for me.
 
 ---
 ## Enemies

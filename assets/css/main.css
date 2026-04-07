@@ -59,6 +59,19 @@ footer {
   padding-top: 1rem;
 }
 
+.footer-left {
+  max-width: 60%;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.attribution {
+  max-width: 60%;
+  margin-top: 4.3rem;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0.2rem;
   line-height: normal;
