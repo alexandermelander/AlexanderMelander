@@ -688,7 +688,7 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div></details>
 <p>This one has a couple of magic numbers which isn&rsquo;t supert neat, but once the closest boundary edges between two navmesh regions were identified, I generated a small bridge of geometry between them. This effectively “welds” the two previously separate meshes into a single continuous surface. After modifying the mesh, I rebuilt the navigation data by generating nodes from the updated geometry and recalculating adjacency between them. This ensures that the AI can traverse seamlessly across the stitched regions, as the pathfinding system now sees them as a single connected graph rather than isolated meshes.</p>
-<p>The biggest thing I&rsquo;m missing from this is implementing the navmesh regions that I have generated into the AI&rsquo;s behaviour. They&rsquo;re already there, but right now our enemies are sampling the entire Navmesh, and while it&rsquo;s not super large, it would be impossible to scale this without seeing significant reduction of performance. This is something that I want to solve along with the Sub-Level loading extension I&rsquo;m planning.</p>
+<p>The biggest thing I&rsquo;m missing from this is implementing the navmesh regions that I have generated into the AI&rsquo;s behaviour. They&rsquo;re already there, but right now our enemies are sampling the entire Navmesh, and while it&rsquo;s not super large, it would be impossible to scale this without seeing significant reduction of performance. Ultimately for this small 10-mintue experience it works due to our distance culling of the enemies. They will never sample enough nodes to cause performance issues because if they are too far away, they will be removed and added back into the enemy pool for the wave.</p>
 
 
 
@@ -701,10 +701,10 @@
 
 <nav class="pagenav">
   
-    <a class="prev" href="/AlexanderMelander/posts/specialisering/">
+    <a class="prev" href="/AlexanderMelander/posts/rhe/">
       <span class="direction">« Prev</span>
       <br>
-      <span> Inverse Kinematics using FABRIK </span>
+      <span> RabbitHole Engine </span>
     </a>
   
   
@@ -725,7 +725,6 @@
       </main>
       <footer>
   <div class="footer-left">
-    I am part of The Game Assembly's internship program. As per the agreement between the Games Industry and The Game Assembly, neither student nor company may be in contact with one another regarding internships before April 15th. Any internship offers can be made on May 27th, at the earliest.
   </div>
 
   <div class="copyright">

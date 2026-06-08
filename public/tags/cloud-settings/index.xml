@@ -4,7 +4,7 @@
     <title>Cloud Settings on Alexander Melander</title>
     <link>http://localhost:1313/AlexanderMelander/tags/cloud-settings/</link>
     <description>Recent content in Cloud Settings on Alexander Melander</description>
-    <generator>Hugo -- 0.157.0</generator>
+    <generator>Hugo -- 0.160.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/AlexanderMelander/tags/cloud-settings/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/AlexanderMelander/posts/bpm/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/AlexanderMelander/posts/bpm/</guid>
-      <description>Published Game on Steam</description>
+      <description>Published Game on Steam, I was responsible for the majority of gameplay, and utilizing the Unity 3D Dashboard API for seamless tweaking of values and gameplay enemies without a need of patches, and telemetry work to track individual players progress.</description>
     </item>
   </channel>
 </rss>

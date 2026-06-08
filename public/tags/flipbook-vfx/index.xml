@@ -4,7 +4,7 @@
     <title>Flipbook VFX on Alexander Melander</title>
     <link>http://localhost:1313/AlexanderMelander/tags/flipbook-vfx/</link>
     <description>Recent content in Flipbook VFX on Alexander Melander</description>
-    <generator>Hugo -- 0.157.0</generator>
+    <generator>Hugo -- 0.160.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/AlexanderMelander/tags/flipbook-vfx/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/AlexanderMelander/posts/bladeofwill/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/AlexanderMelander/posts/bladeofwill/</guid>
-      <description>Intense 2D Hack/Slash Sidescroller</description>
+      <description>Intense 2D Hack/Slash Sidescroller where my main responsibilites included VFX, and Scripted Events tied to the player progression</description>
     </item>
   </channel>
 </rss>

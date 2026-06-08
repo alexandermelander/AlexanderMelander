@@ -4,7 +4,7 @@
     <title>Sublevel/Navmesh Loading on Alexander Melander</title>
     <link>http://localhost:1313/AlexanderMelander/tags/sublevel/navmesh-loading/</link>
     <description>Recent content in Sublevel/Navmesh Loading on Alexander Melander</description>
-    <generator>Hugo -- 0.157.0</generator>
+    <generator>Hugo -- 0.160.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/AlexanderMelander/tags/sublevel/navmesh-loading/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/AlexanderMelander/posts/botops/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/AlexanderMelander/posts/botops/</guid>
-      <description>Group Project 6 at TGA, Waved-based shooter.</description>
+      <description>A Call Of Duty Zombies-inspired Robot shooter, where I was primarily responsible for the Enemy Wave System and Player Progression, as well as animation-handling and gunplay, as well as a Sub-Level system allowing our leveldesigners to stitch together multiple scenes.</description>
     </item>
   </channel>
 </rss>

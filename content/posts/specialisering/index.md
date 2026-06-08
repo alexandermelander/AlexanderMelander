@@ -100,12 +100,12 @@ Tga::Vector3f Spider::BuildFootTarget(SpiderLegChain& aLegChain, const IKChain& 
 ---
 
 ## Solving with FABRIK
-At this point, things are still relative simple. Taking one leg at a time, we convert what we've stored from the spider into a generic IKChain which holds the joints position and lengths, and total length of the chain.
+At this point, things are still relative simple. Taking one leg at a time, I convert what we've stored from the spider into a generic IKChain which holds the joints position and lengths, and total length of the chain.
 Extremely short and sweet. And after population the new IKChain, we have everything to sovle it!
 
 The first thing the solver does is handle the simplest edge case, which is when the target is too far away to ever be reached. If the distance from the root joint to the target is greater than the total length of the chain, then there is no fancy solution to find. The only thing the leg can do is stretch itself out as far as possible in the direction of the target.
 
-The solve works in two passes that repeat over and over until the foot is close enough to the target. The end effector is snapped directly onto the target, because that is ultimately where we want the chain to end. Then the solver walks backward through the leg, moving each earlier joint so that it stays the correct distance away from its child.
+The solve works in two passes that repeat over and over until the foot is close enough to the target. The end effector is snapped directly onto the target, because that is ultimately where I want the chain to end. Then the solver walks backward through the leg, moving each earlier joint so that it stays the correct distance away from its child.
 
 The backward pass gets the foot where it should go, but it can pull the root away from where it belongs. Since the root joint is supposed to stay anchored to the spider’s body, the solver now snaps the root back to its original position and walks forward through the chain again. This time, each child joint is repositioned so that every segment length is preserved from the root outward.
 
@@ -167,19 +167,21 @@ bool FABRIKSolver::Solve(IKChain& aChain, const Tga::Vector3f& aTargetWorld, int
 
 At the end of each iteration, the solver checks how far the end effector still is from the target. If that remaining distance is smaller than the tolerance, then the solve stops early because the result is already good enough.
 
-With this data we can now visualize the spiders bones and joints by drawing them out. To help me along the way I wanted two things: A way to visualize the pre-solved joints joints, and the solved one, and a way to pause and step through each iteration of the Spider moving. With these two simple but invaluable debug it became much easier to digest the problems that began to appear.
+With this data I can now visualize the spiders bones and joints by drawing them out. To help me along the way I wanted two things: A way to visualize the pre-solved joints joints, and the solved one, and a way to pause and step through each iteration of the Spider moving. With these two simple but invaluable debug it became much easier to digest the problems that began to appear.
 
 ![Image](bentspider.png)
 
-...Well, that doesn't look right!
+Well, that doesn't look right!
 
 ---
 
 ## Rebuilding the Mesh
 
-The most important realization of the project came after the green debug lines, representing the solved FABRIK chain, finally started looking correct. I had assumed that once FABRIK produced a clean solution, the mesh would just follow automatically. That assumption was completely wrong, and honestly pretty naive.
+The debug lines looked perfect. The solved chain was clean, the foot was landing exactly where it should, and I felt like I was basically done.
 
-The green line is only a chain of solved positions in space. The mesh, however, is driven by bone transforms, which means it needs correct rotations as well. That sounds like a tiny distinction at first, but it completely changes the problem. It also forced me to confront the fact that my understanding of animation had mostly been at the surface level up until that point. From there on, the challenge was no longer getting FABRIK to solve a nice chain, but figuring out how to make the actual rig follow that solution without tearing itself apart.
+I had assumed the rig would just follow the solved positions automatically, but all I had really solved was the actual vector part. FABRIK gives you a chain of points in space, nothing more. The mesh is driven by bone transforms, which means rotations, and that's an entirely different problem. A distinction that sounds minor until you're staring at a spider that's folding in on itself. Solving the positions was the easy part. Making the actual rig follow without tearing itself apart was where the real work started since I hadn't looked a whole lot into animations and how skeletal meshes actually worked yet.
+
+It was exciting to learn, and the concept clicked pretty fast once I sat down with it. A skeletal mesh is just a hierarchy of bones, each with a local transform relative to its parent. When you want to know where a bone actually sits in the world, you walk up that hierarchy and multiply the transforms together. That chain of multiplications is what converts a local space pose into model space, and then into world space.
 
 {{% details summary="Show Pose code" %}}
 ```cpp
@@ -246,4 +248,4 @@ It was mostly cleaning up magic numbers and tweaking tolerances, speeds, and oth
   Your browser does not support the video tag.
 </video>
 
-This satisfied my curiosity of how inverse kinematics were applied in games. FABRIK seems to be the most popular implementation overall, with Unreal and Unity both having some form of it, most likely to its low computotional cost. Even though the course is finished and I have to turn in this assignment, I'll be continuing to work on this implementation and hopefully see it in our final project. Now that I've gotten a taste of it I want to see where we can start using it, and I have no shortage of ideas. I'll most likely be updating this with any improvements or additions once I get to that point.
+FABRIK turned out to be one of those things that looks intimidating from the outside but has a surprisingly elegant core once you actually sit down with it. The algorithm itself is only a handful of lines the real work was everything around it, understanding skeletal hierarchies well enough to drive a mesh from solved positions, and chasing down the subtle bugs that come from applying rotations in the wrong space. I'd like to revisit it with proper joint constraints and an ImGui interface for selecting target bones at runtime, but even in its current state it gave me a solid foundation for how IK is actually used in games and a spider that can walk up stairs, which feels like a reasonable thing to have built.

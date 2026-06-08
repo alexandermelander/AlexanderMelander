@@ -4,7 +4,7 @@
     <title>C&#43;&#43; on Alexander Melander</title>
     <link>http://localhost:1313/AlexanderMelander/tags/c&#43;&#43;/</link>
     <description>Recent content in C&#43;&#43; on Alexander Melander</description>
-    <generator>Hugo -- 0.157.0</generator>
+    <generator>Hugo -- 0.160.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/AlexanderMelander/tags/c++/index.xml" rel="self" type="application/rss+xml" />
@@ -13,28 +13,28 @@
       <link>http://localhost:1313/AlexanderMelander/posts/specialisering/</link>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/AlexanderMelander/posts/specialisering/</guid>
-      <description>Building a robot spider that can plant its feet on uneven terrain</description>
+      <description>Building a four-legged robotic spider that can walk on uneven surfaces using inverse kinematics in C&#43;&#43; by using F.A.B.R.I.K, an industry standard method implemented in engines such as Unreal and Unity.</description>
+    </item>
+    <item>
+      <title>RabbitHole Engine</title>
+      <link>http://localhost:1313/AlexanderMelander/posts/rhe/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/posts/rhe/</guid>
+      <description>Contributing to our in-house C&#43;&#43; engine — implementing point lights, SSAO, NavMesh, and allowing HLSL shader effects managed through constant buffers.</description>
     </item>
     <item>
       <title>BotOps</title>
       <link>http://localhost:1313/AlexanderMelander/posts/botops/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/AlexanderMelander/posts/botops/</guid>
-      <description>Group Project 6 at TGA, Waved-based shooter.</description>
+      <description>A Call Of Duty Zombies-inspired Robot shooter, where I was primarily responsible for the Enemy Wave System and Player Progression, as well as animation-handling and gunplay, as well as a Sub-Level system allowing our leveldesigners to stitch together multiple scenes.</description>
     </item>
     <item>
       <title>Blade of Will</title>
       <link>http://localhost:1313/AlexanderMelander/posts/bladeofwill/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/AlexanderMelander/posts/bladeofwill/</guid>
-      <description>Intense 2D Hack/Slash Sidescroller</description>
-    </item>
-    <item>
-      <title>Brie Parmesan Mysteries</title>
-      <link>http://localhost:1313/AlexanderMelander/posts/bpm/</link>
-      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/AlexanderMelander/posts/bpm/</guid>
-      <description>Published Game on Steam</description>
+      <description>Intense 2D Hack/Slash Sidescroller where my main responsibilites included VFX, and Scripted Events tied to the player progression</description>
     </item>
   </channel>
 </rss>

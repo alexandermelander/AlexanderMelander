@@ -4,7 +4,7 @@
     <title>Tags on Alexander Melander</title>
     <link>http://localhost:1313/AlexanderMelander/tags/</link>
     <description>Recent content in Tags on Alexander Melander</description>
-    <generator>Hugo -- 0.157.0</generator>
+    <generator>Hugo -- 0.160.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/AlexanderMelander/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -20,6 +20,34 @@
       <link>http://localhost:1313/AlexanderMelander/tags/c&#43;&#43;/</link>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/AlexanderMelander/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Component System</title>
+      <link>http://localhost:1313/AlexanderMelander/tags/component-system/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/tags/component-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DearImGui</title>
+      <link>http://localhost:1313/AlexanderMelander/tags/dearimgui/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/tags/dearimgui/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DX11</title>
+      <link>http://localhost:1313/AlexanderMelander/tags/dx11/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/tags/dx11/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Engine Development</title>
+      <link>http://localhost:1313/AlexanderMelander/tags/engine-development/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/tags/engine-development/</guid>
       <description></description>
     </item>
     <item>
@@ -135,10 +163,17 @@
       <description></description>
     </item>
     <item>
-      <title>Weapons and Animations</title>
-      <link>http://localhost:1313/AlexanderMelander/tags/weapons-and-animations/</link>
+      <title>HLSL</title>
+      <link>http://localhost:1313/AlexanderMelander/tags/hlsl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/AlexanderMelander/tags/weapons-and-animations/</guid>
+      <guid>http://localhost:1313/AlexanderMelander/tags/hlsl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rendering</title>
+      <link>http://localhost:1313/AlexanderMelander/tags/rendering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/AlexanderMelander/tags/rendering/</guid>
       <description></description>
     </item>
   </channel>
